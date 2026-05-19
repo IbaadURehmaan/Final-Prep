@@ -423,10 +423,31 @@
             padding: 25px;
             width: 100%;
             max-width: 700px;
+            max-height: 90vh;
+            overflow-y: auto;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
             text-align: center;
             z-index: 10;
             position: relative;
+        }
+
+        /* Custom Scrollbar */
+        .glass-panel::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .glass-panel::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .glass-panel::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #ff00cc, #333399);
+            border-radius: 10px;
+        }
+
+        .glass-panel::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #ff00cc, #4a00e0);
         }
 
         .hidden {
