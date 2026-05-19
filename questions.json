@@ -1,0 +1,2708 @@
+[
+  {
+    "question": "In the worst-case scenario, such as searching a completely unbalanced, skewed tree, what is the time complexity?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "answer": "O(n)"
+  },
+  {
+    "question": "What is the average-case time complexity for searching, inserting, or deleting an item in a balanced BST?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "answer": "O(log n)"
+  },
+  {
+    "question": "Which shape represents the worst-case layout for a BST, causing its performance to drop to the speed of a linked list?",
+    "options": [
+      "A perfectly symmetrical balanced tree.",
+      "A complete binary tree.",
+      "A degenerate or skewed tree.",
+      "A full binary tree.",
+      "A heap-structured tree."
+    ],
+    "answer": "A degenerate or skewed tree."
+  },
+  {
+    "question": "Why is a balanced Binary Search Tree preferred over a simple unsorted array for active, changing data sets?",
+    "options": [
+      "It uses significantly less memory to store data items.",
+      "It allows you to find items instantly using index positions.",
+      "It keeps data sorted while allowing fast O(log n) additions and removals.",
+      "It completely removes the need to use pointers.",
+      "It guarantees constant O(1) search time for all items."
+    ],
+    "answer": "It keeps data sorted while allowing fast O(log n) additions and removals."
+  },
+  {
+    "question": "What is the ideal, minimum possible height for a BST containing n distinct nodes?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "answer": "O(log n)"
+  },
+  {
+    "question": "What is the worst-case, maximum possible height for a BST containing n distinct nodes?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "answer": "O(n)"
+  },
+  {
+    "question": "Which statement is true about searching for an item in a balanced Binary Search Tree?",
+    "options": [
+      "You must check every single node in the tree to confirm an item is missing.",
+      "Each decision step eliminates roughly half of the remaining nodes from the search path.",
+      "The search process always begins at the bottom-left leaf node.",
+      "Searching a balanced BST is always slower than searching an unsorted list.",
+      "The search time is completely unaffected by how tall the tree is."
+    ],
+    "answer": "Each decision step eliminates roughly half of the remaining nodes from the search path."
+  },
+  {
+    "question": "If you add the numbers 1, 2, 3, 4, and 5 into an empty BST in increasing order, what shape will the tree take?",
+    "options": [
+      "A perfectly symmetrical balanced tree.",
+      "A complete binary tree.",
+      "A straight line leaning to the left.",
+      "A straight line leaning to the right.",
+      "A full binary tree."
+    ],
+    "answer": "A straight line leaning to the right."
+  },
+  {
+    "question": "What is the principal reason for keeping a Binary Search Tree balanced via algorithms like AVL or Red-Black?",
+    "options": [
+      "To minimize the amount of RAM used by node pointers.",
+      "To make the pre-order and post-order outputs look identical.",
+      "To keep the tree height short so search, insertion, and deletion stay at O(log n) speed.",
+      "To transform the tree structure into a simple sequential linked list.",
+      "To allow internal nodes to hold three child branches instead of two."
+    ],
+    "answer": "To keep the tree height short so search, insertion, and deletion stay at O(log n) speed."
+  },
+  {
+    "question": "In a balanced BST, if you double the total number of nodes, what happens to the average lookup time?",
+    "options": [
+      "The lookup time doubles.",
+      "The lookup time quadruples.",
+      "The lookup time drops by exactly half.",
+      "The lookup time increases by roughly one single step.",
+      "The lookup time remains completely unchanged."
+    ],
+    "answer": "The lookup time increases by roughly one single step."
+  },
+  {
+    "question": "What is the worst-case time complexity to find the maximum element in a completely left-skewed BST?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "answer": "O(n)"
+  },
+  {
+    "question": "What is the time complexity to find the minimum element in a perfectly balanced BST?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "answer": "O(log n)"
+  },
+  {
+    "question": "If you create a BST by inserting numbers that are already sorted, its search efficiency matches which of these structures?",
+    "options": [
+      "A Hash Table",
+      "A Singly Linked List",
+      "A Multi-dimensional Array",
+      "A Stack",
+      "A Priority Queue"
+    ],
+    "answer": "A Singly Linked List"
+  },
+  {
+    "question": "In a worst-case setup, how many key comparisons will you make to insert an item into an unbalanced tree with n nodes?",
+    "options": [
+      "1",
+      "log n",
+      "n",
+      "n log n",
+      "n^2"
+    ],
+    "answer": "n"
+  },
+  {
+    "question": "What is the term for a binary tree where every single level is completely filled except possibly the last level, which is filled from left to right?",
+    "options": [
+      "Skewed Binary Tree",
+      "Complete Binary Tree",
+      "Full Binary Tree",
+      "Degenerate Binary Tree",
+      "Alternating Search Tree"
+    ],
+    "answer": "Complete Binary Tree"
+  },
+  {
+    "question": "What happens to the sorting property of a valid BST after you perform many insertions or deletions?",
+    "options": [
+      "The sorting property is permanently lost.",
+      "The structural rules automatically maintain and preserve the sorting property.",
+      "The tree changes structure into a cyclic graph loop.",
+      "The elements are mixed up randomly to optimize storage space.",
+      "The items become sorted in reverse order."
+    ],
+    "answer": "The structural rules automatically maintain and preserve the sorting property."
+  },
+  {
+    "question": "If a BST becomes completely left-skewed, the time complexity of finding the maximum value is:",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "answer": "O(1)"
+  },
+  {
+    "question": "On average, which of the following structures provides the fastest search time for a dynamic, sorted collection of data?",
+    "options": [
+      "An unsorted linked list",
+      "An unsorted array",
+      "A balanced Binary Search Tree",
+      "A skewed Binary Search Tree",
+      "A basic queue structure"
+    ],
+    "answer": "A balanced Binary Search Tree"
+  },
+  {
+    "question": "Why is a lookup in a balanced BST faster than a lookup in a singly linked list containing the same elements?",
+    "options": [
+      "The tree uses fewer pointers than a linked list.",
+      "The tree structure allows you to skip large portions of data, while a list requires linear scanning.",
+      "Elements in a tree are stored physically closer together in computer memory hardware.",
+      "The tree automatically converts all keys into small array index numbers.",
+      "A linked list cannot store numerical data keys."
+    ],
+    "answer": "The tree structure allows you to skip large portions of data, while a list requires linear scanning."
+  },
+  {
+    "question": "If a BST has a height of h, what is the maximum number of comparisons needed to find any key?",
+    "options": [
+      "h",
+      "h + 1",
+      "2h",
+      "log(h)",
+      "n"
+    ],
+    "answer": "h + 1"
+  },
+  {
+    "question": "What is the average and worst-case time complexity for inserting a single element into a Binary Heap of size n?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "answer": "O(log n)"
+  },
+  {
+    "question": "What is the time complexity to remove or extract the top element (root) from a Binary Heap of size n?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "answer": "O(log n)"
+  },
+  {
+    "question": "What is the constant time complexity O(1) associated with when interacting with a Max-Heap?",
+    "options": [
+      "Inserting a new random element.",
+      "Deleting any random internal element.",
+      "Peeking at or reading the maximum element without removing it.",
+      "Sorting the entire heap array structure.",
+      "Rebuilding an entirely broken heap array."
+    ],
+    "answer": "Peeking at or reading the maximum element without removing it."
+  },
+  {
+    "question": "What is the time complexity of the optimal 'Heapify' algorithm to build a heap from an unsorted array of n elements?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "answer": "O(n)"
+  },
+  {
+    "question": "Why is inserting an item into a binary heap much faster in the best case compared to its worst-case O(log n) limit?",
+    "options": [
+      "In the best case, the new item is larger than its parent (in Min-Heap) and stops bubbling up immediately.",
+      "The best case always skips the array expansion step entirely.",
+      "Best-case insertion changes the tree layout into a linked list.",
+      "The best case avoids reading from index position 1.",
+      "Best case allows the heap to run two sorting steps at the same time."
+    ],
+    "answer": "In the best case, the new item is larger than its parent (in Min-Heap) and stops bubbling up immediately."
+  },
+  {
+    "question": "In the worst-case scenario, how many node swap operations are required during a single element insertion?",
+    "options": [
+      "1 swap",
+      "n swaps",
+      "Equal to the height of the tree, which is log n swaps",
+      "n log n swaps",
+      "No swaps are ever required for insertion."
+    ],
+    "answer": "Equal to the height of the tree, which is log n swaps"
+  },
+  {
+    "question": "What makes an array-based heap highly space-efficient compared to a pointer-based binary search tree?",
+    "options": [
+      "It compresses all numerical data keys into smaller data types.",
+      "It completely eliminates the memory overhead of storing explicit left, right, and parent pointer variables.",
+      "It allows duplicate numbers to be stored in the exact same memory cell.",
+      "It stores data on disk hardware instead of main computer RAM.",
+      "It requires only half the bits to represent array elements."
+    ],
+    "answer": "It completely eliminates the memory overhead of storing explicit left, right, and parent pointer variables."
+  },
+  {
+    "question": "If the size of a binary heap increases from 1,000 elements to 2,000 elements, how does the worst-case insertion time scale?",
+    "options": [
+      "The insertion time doubles immediately.",
+      "The insertion time quadruples immediately.",
+      "The insertion time increases by at most one single additional comparison step.",
+      "The insertion time drops down by half.",
+      "The insertion time stays perfectly identical with zero change."
+    ],
+    "answer": "The insertion time increases by at most one single additional comparison step."
+  },
+  {
+    "question": "What is the worst-case time complexity of finding a random specific value (not the max or min) in a standard Max-Heap?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "answer": "O(n)"
+  },
+  {
+    "question": "Why is the naive method of building a heap by inserting elements one by one slower than the optimized bottom-up Build-Heap method?",
+    "options": [
+      "One-by-one insertion has a total time complexity of O(n log n), while bottom-up build takes O(n).",
+      "One-by-one insertion forces the array to use memory pointers.",
+      "Bottom-up build completely avoids swapping any values in memory.",
+      "One-by-one insertion can only construct min-heaps, not max-heaps.",
+      "There is no performance difference between the two approaches."
+    ],
+    "answer": "One-by-one insertion has a total time complexity of O(n log n), while bottom-up build takes O(n)."
+  },
+  {
+    "question": "What is the maximum number of structural comparisons a bubble-down (Heapify) operation performs on a node at height h?",
+    "options": [
+      "1",
+      "h",
+      "2 * h",
+      "h / 2",
+      "n"
+    ],
+    "answer": "2 * h"
+  },
+  {
+    "question": "How much additional memory space (auxiliary space complexity) does the basic array-based Heapify algorithm require to run?",
+    "options": [
+      "O(1) - it operates entirely in-place inside the existing array.",
+      "O(log n) - to copy tree paths.",
+      "O(n) - to duplicate the entire input array.",
+      "O(n log n) - to store sorting tracking tables.",
+      "O(2^n) - to manage branch combinations."
+    ],
+    "answer": "O(1) - it operates entirely in-place inside the existing array."
+  },
+  {
+    "question": "Which of the following operations on a binary heap exhibits a true worst-case time complexity of O(n)?",
+    "options": [
+      "Extracting the root element.",
+      "Peeking at the root element.",
+      "Searching for a specific user-defined key across the whole structure.",
+      "Inserting a brand new item at the bottom leaf level.",
+      "Swapping a parent node with its left child."
+    ],
+    "answer": "Searching for a specific user-defined key across the whole structure."
+  },
+  {
+    "question": "What happens to the performance efficiency of a binary heap if it is implemented using a pointer-based linked tree instead of a flat array?",
+    "options": [
+      "Search speed accelerates to O(1) time.",
+      "Memory footprint increases significantly due to pointer storage, and finding the last leaf node becomes computationally slower.",
+      "The tree loses its sorting properties completely.",
+      "The tree can no longer support deletion operations.",
+      "It eliminates the need to run the Heapify algorithm."
+    ],
+    "answer": "Memory footprint increases significantly due to pointer storage, and finding the last leaf node becomes computationally slower."
+  },
+  {
+    "question": "What is the total time complexity required to perform n extractions of the maximum element from a Max-Heap to complete a Heap Sort?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "answer": "O(n log n)"
+  },
+  {
+    "question": "What is the maximum height of a binary heap containing n items?",
+    "options": [
+      "Exactly n",
+      "Exactly n / 2",
+      "Floor of log2(n)",
+      "n * n",
+      "Constant 0"
+    ],
+    "answer": "Floor of log2(n)"
+  },
+  {
+    "question": "In an array-based max-heap with n elements, elements located from index position (n/2)+1 to index n are guaranteed to be what?",
+    "options": [
+      "Elements that are sorted in strictly ascending sequence.",
+      "Leaf nodes containing no child branches.",
+      "Elements that are larger than the root node.",
+      "Even numbers only.",
+      "Invalid memory locations outside the tree boundaries."
+    ],
+    "answer": "Leaf nodes containing no child branches."
+  },
+  {
+    "question": "Why does a look-up for the absolute minimum element in a Max-Heap take O(n) time?",
+    "options": [
+      "The minimum element is always locked at index position 1.",
+      "The minimum element could reside in any of the leaf node slots, requiring a linear scan of roughly half the array.",
+      "The heap property forces minimum values to be cleared from memory.",
+      "It requires converting the entire max-heap structure into a binary search tree first.",
+      "Max-heaps cannot physically store minimum values."
+    ],
+    "answer": "The minimum element could reside in any of the leaf node slots, requiring a linear scan of roughly half the array."
+  },
+  {
+    "question": "What structural characteristic guarantees that a binary heap will never suffer from a worst-case height of O(n), unlike a standard Binary Search Tree?",
+    "options": [
+      "It enforces a strict left-to-right node coloring scheme.",
+      "It is mandatory for it to be a complete binary tree, which keeps the tree height strictly logarithmic.",
+      "Nodes must always contain small integer values.",
+      "It only allows insertions and bans deletion workflows.",
+      "It uses an internal rotation algorithm during traversals."
+    ],
+    "answer": "It is mandatory for it to be a complete binary tree, which keeps the tree height strictly logarithmic."
+  },
+  {
+    "question": "If you perform an insertion followed immediately by an extraction on a heap of size n, what is the combined worst-case time complexity?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "answer": "O(log n)"
+  },
+  {
+    "question": "Which data structure concept uses a mathematical function to map identifiers directly to array indices for rapid retrieval?",
+    "options": [
+      "Binary Search Tree",
+      "Min-Heap",
+      "Hash Table",
+      "Singly Linked List",
+      "Stack"
+    ],
+    "answer": "Hash Table"
+  },
+  {
+    "question": "What is the fundamental objective of a hash function?",
+    "options": [
+      "To sort an array in ascending order.",
+      "To balance a tree structure dynamically.",
+      "To compress multiple data values into a single memory byte.",
+      "To convert a unique key into a specific integer index within table boundaries.",
+      "To prevent duplicate values from being entered into a list."
+    ],
+    "answer": "To convert a unique key into a specific integer index within table boundaries."
+  },
+  {
+    "question": "In a hash table, what does the term 'Bucket' represent?",
+    "options": [
+      "The key string passed by the user.",
+      "A specific storage slot or position within the internal table array.",
+      "The percentage of space currently occupied.",
+      "The pointer linking two colliding elements.",
+      "The total running count of table entries."
+    ],
+    "answer": "A specific storage slot or position within the internal table array."
+  },
+  {
+    "question": "What structural event occurs when a hash function generates the exact same index for two distinct keys?",
+    "options": [
+      "A memory underflow error.",
+      "An automatic table resizing.",
+      "A collision.",
+      "A primary clustering swap.",
+      "A null pointer exception."
+    ],
+    "answer": "A collision."
+  },
+  {
+    "question": "How is the Load Factor (α) of a hash table mathematically defined?",
+    "options": [
+      "Table size multiplied by the number of elements.",
+      "Total number of elements divided by the table size.",
+      "The number of empty buckets divided by the number of filled buckets.",
+      "Total number of collisions divided by the table size.",
+      "Maximum array capacity minus the current number of elements."
+    ],
+    "answer": "Total number of elements divided by the table size."
+  },
+  {
+    "question": "Which collision resolution approach keeps all colliding elements at the original computed index by storing them in a linked list?",
+    "options": [
+      "Linear Probing",
+      "Quadratic Probing",
+      "Double Hashing",
+      "Chaining",
+      "Open Addressing"
+    ],
+    "answer": "Chaining"
+  },
+  {
+    "question": "What is the primary rule of the Open Addressing strategy for handling collisions?",
+    "options": [
+      "Move the colliding item into a separate, secondary table.",
+      "Store the item inside a linked list attached to the bucket.",
+      "Search the existing table array systematically for another available, empty slot.",
+      "Delete the older entry to clear the slot for the new item.",
+      "Reject the new item and trigger a system crash."
+    ],
+    "answer": "Search the existing table array systematically for another available, empty slot."
+  },
+  {
+    "question": "Which type of table is used by compilers to efficiently map program symbols to their associated data traits?",
+    "options": [
+      "Min-Heap table",
+      "Symbol table",
+      "Adjacency table",
+      "Priority table",
+      "Look-up matrix"
+    ],
+    "answer": "Symbol table"
+  },
+  {
+    "question": "What characteristic is highly valued when designing a practical hash function?",
+    "options": [
+      "It should distribute keys uniformly across the table to minimize clustering.",
+      "It should map all keys to consecutive adjacent indices.",
+      "It should take a highly variable amount of time to compute indices.",
+      "It should change its output index randomly each time it is executed.",
+      "It should process string keys much slower than integer keys."
+    ],
+    "answer": "It should distribute keys uniformly across the table to minimize clustering."
+  },
+  {
+    "question": "In the context of a hash table, what is a 'Key'?",
+    "options": [
+      "The calculated array index location.",
+      "The unique identifier used to look up, add, or delete an entry.",
+      "The total storage limit of the underlying array.",
+      "A placeholder flag indicating a deleted item.",
+      "The data payload associated with a record."
+    ],
+    "answer": "The unique identifier used to look up, add, or delete an entry."
+  },
+  {
+    "question": "What is the amortized time complexity of Union and Find operations with path compression and union by rank?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(alpha(n))",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "answer": "O(alpha(n)) (Inverse Ackermann function, near constant)."
+  },
+  {
+    "question": "What is a 'Spanning Tree'?",
+    "options": [
+      "A tree that connects all vertices of a graph.",
+      "A tree with no edges.",
+      "A tree with loops.",
+      "A forest.",
+      "A list."
+    ],
+    "answer": "A tree that connects all vertices of a graph."
+  },
+  {
+    "question": "Can a graph have multiple Minimum Spanning Trees?",
+    "options": [
+      "Yes, if edge weights are not unique.",
+      "No.",
+      "Only if disconnected.",
+      "Only if acyclic.",
+      "Never."
+    ],
+    "answer": "Yes, if edge weights are not unique."
+  },
+  {
+    "question": "Which algorithm finds the shortest path from a single source vertex to all other vertices?",
+    "options": [
+      "Dijkstra's algorithm.",
+      "Kruskal's algorithm.",
+      "Prim's algorithm.",
+      "Bubble Sort.",
+      "Binary Search."
+    ],
+    "answer": "Dijkstra's algorithm."
+  },
+  {
+    "question": "What is a characteristic of Dijkstra’s algorithm?",
+    "options": [
+      "Greedy.",
+      "Dynamic Programming.",
+      "Brute Force.",
+      "Randomized.",
+      "Backtracking."
+    ],
+    "answer": "Greedy."
+  },
+  {
+    "question": "Can Dijkstra's algorithm handle negative edge weights?",
+    "options": [
+      "No.",
+      "Yes.",
+      "Only if acyclic.",
+      "Only if sorted.",
+      "Always."
+    ],
+    "answer": "No."
+  },
+  {
+    "question": "What is the time complexity of Dijkstra’s using a binary heap?",
+    "options": [
+      "O((V+E) log V).",
+      "O(V^2).",
+      "O(E log E).",
+      "O(V log E).",
+      "O(1)."
+    ],
+    "answer": "O((V+E) log V)."
+  },
+  {
+    "question": "What is the Bellman-Ford algorithm used for?",
+    "options": [
+      "Shortest path with negative weights.",
+      "Sorting.",
+      "Hashing.",
+      "Trie indexing.",
+      "Tree balancing."
+    ],
+    "answer": "Shortest path with negative weights."
+  },
+  {
+    "question": "What is the complexity of Bellman-Ford?",
+    "options": [
+      "O(V * E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V * E)."
+  },
+  {
+    "question": "What is the Floyd-Warshall algorithm used for?",
+    "options": [
+      "All-pairs shortest paths.",
+      "Sorting.",
+      "Hashing.",
+      "Tree balancing.",
+      "Graph coloring."
+    ],
+    "answer": "All-pairs shortest paths."
+  },
+  {
+    "question": "What is the complexity of Floyd-Warshall?",
+    "options": [
+      "O(V^3).",
+      "O(V * E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(1)."
+    ],
+    "answer": "O(V^3)."
+  },
+  {
+    "question": "What is a Directed Acyclic Graph (DAG)?",
+    "options": [
+      "A graph with no directed cycles.",
+      "A tree.",
+      "A heap.",
+      "A list.",
+      "A queue."
+    ],
+    "answer": "A graph with no directed cycles."
+  },
+  {
+    "question": "Which algorithm is used to find the shortest path in a DAG?",
+    "options": [
+      "Topological sort based approach.",
+      "Dijkstra.",
+      "Bellman-Ford.",
+      "Floyd-Warshall.",
+      "Kruskal."
+    ],
+    "answer": "Topological sort based approach."
+  },
+  {
+    "question": "What is Topological Sort?",
+    "options": [
+      "Ordering vertices such that for every directed edge u->v, u comes before v.",
+      "Sorting by weight.",
+      "Sorting by index.",
+      "Deleting nodes.",
+      "Hashing nodes."
+    ],
+    "answer": "Ordering vertices such that for every directed edge u->v, u comes before v."
+  },
+  {
+    "question": "What is the complexity of Topological Sort?",
+    "options": [
+      "O(V + E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V + E)."
+  },
+  {
+    "question": "What does a negative cycle mean in a graph?",
+    "options": [
+      "Shortest path is undefined.",
+      "Graph is acyclic.",
+      "Tree is balanced.",
+      "Hash table is empty.",
+      "Heap is full."
+    ],
+    "answer": "Shortest path is undefined."
+  },
+  {
+    "question": "What is a 'connected' graph?",
+    "options": [
+      "There is a path between every pair of vertices.",
+      "No paths exist.",
+      "Only one vertex.",
+      "Only two vertices.",
+      "Edges are negative."
+    ],
+    "answer": "There is a path between every pair of vertices."
+  },
+  {
+    "question": "What is a 'complete' graph?",
+    "options": [
+      "Every pair of distinct vertices is connected by a unique edge.",
+      "No edges.",
+      "Only one edge.",
+      "Two edges.",
+      "Cyclic."
+    ],
+    "answer": "Every pair of distinct vertices is connected by a unique edge."
+  },
+  {
+    "question": "What is the number of edges in a complete undirected graph with V vertices?",
+    "options": [
+      "V*(V-1)/2.",
+      "V^2.",
+      "V.",
+      "2*V.",
+      "V-1."
+    ],
+    "answer": "V*(V-1)/2."
+  },
+  {
+    "question": "What is a 'sparse' graph?",
+    "options": [
+      "Number of edges is close to V.",
+      "Number of edges is close to V^2.",
+      "No edges.",
+      "One vertex.",
+      "Infinite vertices."
+    ],
+    "answer": "Number of edges is close to V."
+  },
+  {
+    "question": "What is a 'dense' graph?",
+    "options": [
+      "Number of edges is close to V^2.",
+      "Number of edges is close to V.",
+      "No edges.",
+      "One vertex.",
+      "Infinite vertices."
+    ],
+    "answer": "Number of edges is close to V^2."
+  },
+  {
+    "question": "Which graph representation is better for sparse graphs?",
+    "options": [
+      "Adjacency list.",
+      "Adjacency matrix.",
+      "Heap.",
+      "List.",
+      "Stack."
+    ],
+    "answer": "Adjacency list."
+  },
+  {
+    "question": "Which graph representation is better for dense graphs?",
+    "options": [
+      "Adjacency matrix.",
+      "Adjacency list.",
+      "Heap.",
+      "List.",
+      "Stack."
+    ],
+    "answer": "Adjacency matrix."
+  },
+  {
+    "question": "What is the complexity of BFS?",
+    "options": [
+      "O(V + E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V + E)."
+  },
+  {
+    "question": "What is the complexity of DFS?",
+    "options": [
+      "O(V + E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V + E)."
+  },
+  {
+    "question": "Which data structure does BFS use?",
+    "options": [
+      "Queue.",
+      "Stack.",
+      "Heap.",
+      "Tree.",
+      "Array."
+    ],
+    "answer": "Queue."
+  },
+  {
+    "question": "Which data structure does DFS use?",
+    "options": [
+      "Stack.",
+      "Queue.",
+      "Heap.",
+      "Tree.",
+      "Array."
+    ],
+    "answer": "Stack."
+  },
+  {
+    "question": "What does BFS find?",
+    "options": [
+      "Shortest path in unweighted graph.",
+      "Longest path.",
+      "All paths.",
+      "No paths.",
+      "Weight."
+    ],
+    "answer": "Shortest path in unweighted graph."
+  },
+  {
+    "question": "What is the main purpose of DFS?",
+    "options": [
+      "Exploring as far as possible along each branch.",
+      "Shortest path.",
+      "Sorting.",
+      "Hashing.",
+      "Balancing."
+    ],
+    "answer": "Exploring as far as possible along each branch."
+  },
+  {
+    "question": "What is an articulation point in a graph?",
+    "options": [
+      "A vertex whose removal increases the number of connected components.",
+      "A leaf node.",
+      "A root node.",
+      "An edge.",
+      "A cycle."
+    ],
+    "answer": "A vertex whose removal increases the number of connected components."
+  },
+  {
+    "question": "What is a bridge in a graph?",
+    "options": [
+      "An edge whose removal increases the number of connected components.",
+      "A leaf node.",
+      "A root node.",
+      "A vertex.",
+      "A cycle."
+    ],
+    "answer": "An edge whose removal increases the number of connected components."
+  },
+  {
+    "question": "Which algorithm finds strongly connected components?",
+    "options": [
+      "Tarjan's algorithm.",
+      "Dijkstra.",
+      "Bellman-Ford.",
+      "Floyd-Warshall.",
+      "Kruskal."
+    ],
+    "answer": "Tarjan's algorithm."
+  },
+  {
+    "question": "What are strongly connected components?",
+    "options": [
+      "Maximal subgraphs where every vertex is reachable from every other vertex.",
+      "A tree.",
+      "A heap.",
+      "A list.",
+      "An array."
+    ],
+    "answer": "Maximal subgraphs where every vertex is reachable from every other vertex."
+  },
+  {
+    "question": "What is a bipartite graph?",
+    "options": [
+      "Vertices can be divided into two disjoint sets such that every edge connects a vertex in one set to one in the other.",
+      "A tree.",
+      "A heap.",
+      "A list.",
+      "An array."
+    ],
+    "answer": "Vertices can be divided into two disjoint sets such that every edge connects a vertex in one set to one in the other."
+  },
+  {
+    "question": "How do you check if a graph is bipartite?",
+    "options": [
+      "Using BFS/DFS 2-coloring.",
+      "Using sorting.",
+      "Using hashing.",
+      "Using heap.",
+      "Using stack."
+    ],
+    "answer": "Using BFS/DFS 2-coloring."
+  },
+  {
+    "question": "What is the complexity of 2-coloring?",
+    "options": [
+      "O(V + E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V + E)."
+  },
+  {
+    "question": "What is a directed graph?",
+    "options": [
+      "Edges have directions.",
+      "No directions.",
+      "Only one edge.",
+      "Two edges.",
+      "Cyclic."
+    ],
+    "answer": "Edges have directions."
+  },
+  {
+    "question": "What is an undirected graph?",
+    "options": [
+      "Edges have no direction.",
+      "Edges have directions.",
+      "Only one edge.",
+      "Two edges.",
+      "Cyclic."
+    ],
+    "answer": "Edges have no direction."
+  },
+  {
+    "question": "What is a weighted graph?",
+    "options": [
+      "Edges have weights.",
+      "No weights.",
+      "Only one edge.",
+      "Two edges.",
+      "Cyclic."
+    ],
+    "answer": "Edges have weights."
+  },
+  {
+    "question": "What is an unweighted graph?",
+    "options": [
+      "No weights.",
+      "Edges have weights.",
+      "Only one edge.",
+      "Two edges.",
+      "Cyclic."
+    ],
+    "answer": "No weights."
+  },
+  {
+    "question": "What is the degree of a vertex?",
+    "options": [
+      "Number of edges connected to it.",
+      "Number of vertices.",
+      "Number of cycles.",
+      "Number of paths.",
+      "Number of weights."
+    ],
+    "answer": "Number of edges connected to it."
+  },
+  {
+    "question": "What is the in-degree of a vertex in a directed graph?",
+    "options": [
+      "Number of incoming edges.",
+      "Number of outgoing edges.",
+      "Number of edges.",
+      "Number of paths.",
+      "Number of cycles."
+    ],
+    "answer": "Number of incoming edges."
+  },
+  {
+    "question": "What is the out-degree of a vertex in a directed graph?",
+    "options": [
+      "Number of outgoing edges.",
+      "Number of incoming edges.",
+      "Number of edges.",
+      "Number of paths.",
+      "Number of cycles."
+    ],
+    "answer": "Number of outgoing edges."
+  },
+  {
+    "question": "What is a subgraph?",
+    "options": [
+      "A subset of vertices and edges.",
+      "A tree.",
+      "A heap.",
+      "A list.",
+      "An array."
+    ],
+    "answer": "A subset of vertices and edges."
+  },
+  {
+    "question": "What is a path?",
+    "options": [
+      "Sequence of vertices connected by edges.",
+      "No sequence.",
+      "Only one vertex.",
+      "Only two vertices.",
+      "Cycle."
+    ],
+    "answer": "Sequence of vertices connected by edges."
+  },
+  {
+    "question": "What is a simple path?",
+    "options": [
+      "A path with no repeated vertices.",
+      "A path with loops.",
+      "A path with weights.",
+      "A path with cycles.",
+      "A path with no edges."
+    ],
+    "answer": "A path with no repeated vertices."
+  },
+  {
+    "question": "What is a cycle?",
+    "options": [
+      "A path that starts and ends at the same vertex.",
+      "A path with no end.",
+      "A path with no start.",
+      "A linear path.",
+      "A tree."
+    ],
+    "answer": "A path that starts and ends at the same vertex."
+  },
+  {
+    "question": "What is an acyclic graph?",
+    "options": [
+      "A graph with no cycles.",
+      "A graph with cycles.",
+      "A tree.",
+      "A heap.",
+      "A list."
+    ],
+    "answer": "A graph with no cycles."
+  },
+  {
+    "question": "What is a forest?",
+    "options": [
+      "A collection of disjoint trees.",
+      "A collection of cycles.",
+      "A collection of heaps.",
+      "A collection of lists.",
+      "A collection of arrays."
+    ],
+    "answer": "A collection of disjoint trees."
+  },
+  {
+    "question": "How do you represent a graph using an adjacency matrix?",
+    "options": [
+      "2D array.",
+      "1D array.",
+      "Linked list.",
+      "Tree.",
+      "Heap."
+    ],
+    "answer": "2D array."
+  },
+  {
+    "question": "How do you represent a graph using an adjacency list?",
+    "options": [
+      "Array of lists.",
+      "2D array.",
+      "Tree.",
+      "Heap.",
+      "List."
+    ],
+    "answer": "Array of lists."
+  },
+  {
+    "question": "Which representation is better for dense graphs?",
+    "options": [
+      "Adjacency matrix.",
+      "Adjacency list.",
+      "Heap.",
+      "List.",
+      "Stack."
+    ],
+    "answer": "Adjacency matrix."
+  },
+  {
+    "question": "Which representation is better for sparse graphs?",
+    "options": [
+      "Adjacency list.",
+      "Adjacency matrix.",
+      "Heap.",
+      "List.",
+      "Stack."
+    ],
+    "answer": "Adjacency list."
+  },
+  {
+    "question": "What is a spanning tree?",
+    "options": [
+      "A subgraph that includes all vertices and is a tree.",
+      "A subgraph that is not connected.",
+      "A subgraph that contains cycles.",
+      "A subgraph that has fewer vertices.",
+      "A subgraph that has no edges."
+    ],
+    "answer": "A subgraph that includes all vertices and is a tree."
+  },
+  {
+    "question": "What does a spanning tree achieve?",
+    "options": [
+      "Connects all nodes with minimum edges.",
+      "Connects all nodes with maximum edges.",
+      "Finds shortest path.",
+      "Finds longest path.",
+      "Sorts nodes."
+    ],
+    "answer": "Connects all nodes with minimum edges."
+  },
+  {
+    "question": "How many edges does a spanning tree with V vertices have?",
+    "options": [
+      "V-1.",
+      "V.",
+      "V+1.",
+      "V/2.",
+      "V^2."
+    ],
+    "answer": "V-1."
+  },
+  {
+    "question": "Which of the following is an MST algorithm?",
+    "options": [
+      "Kruskal’s.",
+      "Dijkstra.",
+      "Bellman-Ford.",
+      "Quick Sort.",
+      "Merge Sort."
+    ],
+    "answer": "Kruskal’s."
+  },
+  {
+    "question": "Which of the following is also an MST algorithm?",
+    "options": [
+      "Prim’s.",
+      "Dijkstra.",
+      "Bellman-Ford.",
+      "Quick Sort.",
+      "Merge Sort."
+    ],
+    "answer": "Prim’s."
+  },
+  {
+    "question": "What is the time complexity of Kruskal’s using Union-Find?",
+    "options": [
+      "O(E log E).",
+      "O(V^2).",
+      "O(V log V).",
+      "O(E log V).",
+      "O(1)."
+    ],
+    "answer": "O(E log E)."
+  },
+  {
+    "question": "What is the time complexity of Prim’s using a Min-Heap?",
+    "options": [
+      "O(E log V).",
+      "O(V^2).",
+      "O(E log E).",
+      "O(V log E).",
+      "O(1)."
+    ],
+    "answer": "O(E log V)."
+  },
+  {
+    "question": "What is the greedy property?",
+    "options": [
+      "Always choose the best local option.",
+      "Always choose the worst local option.",
+      "Choose random options.",
+      "No choices.",
+      "Always sort first."
+    ],
+    "answer": "Always choose the best local option."
+  },
+  {
+    "question": "Why is the greedy approach correct for MST?",
+    "options": [
+      "Cut property ensures global optimality.",
+      "It is simple.",
+      "It is fast.",
+      "It is memory efficient.",
+      "No reason."
+    ],
+    "answer": "Cut property ensures global optimality."
+  },
+  {
+    "question": "What happens if you add an edge to a spanning tree?",
+    "options": [
+      "A cycle is created.",
+      "It remains a tree.",
+      "The tree becomes smaller.",
+      "The tree becomes a graph.",
+      "The tree becomes a list."
+    ],
+    "answer": "A cycle is created."
+  },
+  {
+    "question": "Which of the following algorithms is not for MST?",
+    "options": [
+      "Dijkstra.",
+      "Kruskal.",
+      "Prim.",
+      "All are MST algorithms.",
+      "None are MST algorithms."
+    ],
+    "answer": "Dijkstra."
+  },
+  {
+    "question": "What is a 'cut' in a graph?",
+    "options": [
+      "A partition of vertices into two sets.",
+      "A path.",
+      "A cycle.",
+      "A tree.",
+      "A list."
+    ],
+    "answer": "A partition of vertices into two sets."
+  },
+  {
+    "question": "What is a 'crossing edge' of a cut?",
+    "options": [
+      "An edge with endpoints in different sets.",
+      "An edge with endpoints in the same set.",
+      "No edges.",
+      "One vertex.",
+      "Two vertices."
+    ],
+    "answer": "An edge with endpoints in different sets."
+  },
+  {
+    "question": "What does the cut property state?",
+    "options": [
+      "The minimum weight crossing edge of a cut is in the MST.",
+      "The maximum weight crossing edge is in the MST.",
+      "No edge is in the MST.",
+      "All edges are in the MST.",
+      "The tree has no edges."
+    ],
+    "answer": "The minimum weight crossing edge of a cut is in the MST."
+  },
+  {
+    "question": "Does Prim's algorithm always work for connected graphs?",
+    "options": [
+      "Yes.",
+      "No.",
+      "Only if acyclic.",
+      "Only if sorted.",
+      "Always."
+    ],
+    "answer": "Yes."
+  },
+  {
+    "question": "Does Kruskal’s algorithm always work for connected graphs?",
+    "options": [
+      "Yes.",
+      "No.",
+      "Only if acyclic.",
+      "Only if sorted.",
+      "Always."
+    ],
+    "answer": "Yes."
+  },
+  {
+    "question": "What is the space complexity of Kruskal’s?",
+    "options": [
+      "O(V + E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V + E)."
+  },
+  {
+    "question": "What is the space complexity of Prim’s?",
+    "options": [
+      "O(V + E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V + E)."
+  },
+  {
+    "question": "Which algorithm is better for disconnected graphs?",
+    "options": [
+      "Both can be modified.",
+      "Prim's.",
+      "Kruskal's.",
+      "Neither.",
+      "Only Kruskal's."
+    ],
+    "answer": "Both can be modified."
+  },
+  {
+    "question": "Can MST be used in networking?",
+    "options": [
+      "Yes.",
+      "No.",
+      "Only in small networks.",
+      "Only in large networks.",
+      "Never."
+    ],
+    "answer": "Yes."
+  },
+  {
+    "question": "What is an application of MST?",
+    "options": [
+      "Network design.",
+      "Sorting.",
+      "Hashing.",
+      "Tree balancing.",
+      "Graph coloring."
+    ],
+    "answer": "Network design."
+  },
+  {
+    "question": "Are there negative weights in MST?",
+    "options": [
+      "Yes.",
+      "No.",
+      "Only in small graphs.",
+      "Only in trees.",
+      "Never."
+    ],
+    "answer": "Yes."
+  },
+  {
+    "question": "What is a 'priority queue'?",
+    "options": [
+      "A queue where elements are retrieved based on priority.",
+      "FIFO queue.",
+      "LIFO queue.",
+      "Stack.",
+      "List."
+    ],
+    "answer": "A queue where elements are retrieved based on priority."
+  },
+  {
+    "question": "How are priorities defined in Min-Heap?",
+    "options": [
+      "Smaller value means higher priority.",
+      "Larger value means higher priority.",
+      "Random.",
+      "No priority.",
+      "Alphabetical."
+    ],
+    "answer": "Smaller value means higher priority."
+  },
+  {
+    "question": "How are priorities defined in Max-Heap?",
+    "options": [
+      "Larger value means higher priority.",
+      "Smaller value means higher priority.",
+      "Random.",
+      "No priority.",
+      "Alphabetical."
+    ],
+    "answer": "Larger value means higher priority."
+  },
+  {
+    "question": "What is 'Decrease-Key'?",
+    "options": [
+      "Lowering a value and updating its heap position.",
+      "Sorting.",
+      "Deleting.",
+      "Hashing.",
+      "Searching."
+    ],
+    "answer": "Lowering a value and updating its heap position."
+  },
+  {
+    "question": "What is 'Extract-Min'?",
+    "options": [
+      "Removing the minimum and restoring the heap.",
+      "Sorting.",
+      "Deleting.",
+      "Hashing.",
+      "Searching."
+    ],
+    "answer": "Removing the minimum and restoring the heap."
+  },
+  {
+    "question": "What is 'Extract-Max'?",
+    "options": [
+      "Removing the maximum and restoring the heap.",
+      "Sorting.",
+      "Deleting.",
+      "Hashing.",
+      "Searching."
+    ],
+    "answer": "Removing the maximum and restoring the heap."
+  },
+  {
+    "question": "Which algorithm uses a priority queue extensively?",
+    "options": [
+      "Prim's.",
+      "Kruskal's.",
+      "Bubble Sort.",
+      "Merge Sort.",
+      "Binary Search."
+    ],
+    "answer": "Prim's."
+  },
+  {
+    "question": "What is a forest?",
+    "options": [
+      "Collection of trees.",
+      "Collection of heaps.",
+      "Collection of lists.",
+      "Collection of stacks.",
+      "Collection of arrays."
+    ],
+    "answer": "Collection of trees."
+  },
+  {
+    "question": "What does a cycle in a graph signify?",
+    "options": [
+      "A closed path.",
+      "A tree.",
+      "A list.",
+      "A heap.",
+      "An array."
+    ],
+    "answer": "A closed path."
+  },
+  {
+    "question": "What is a bridge in a graph?",
+    "options": [
+      "Edge whose removal disconnects the graph.",
+      "Vertex whose removal disconnects the graph.",
+      "Path.",
+      "Cycle.",
+      "Tree."
+    ],
+    "answer": "Edge whose removal disconnects the graph."
+  },
+  {
+    "question": "What is an articulation point?",
+    "options": [
+      "Vertex whose removal disconnects the graph.",
+      "Edge whose removal disconnects the graph.",
+      "Path.",
+      "Cycle.",
+      "Tree."
+    ],
+    "answer": "Vertex whose removal disconnects the graph."
+  },
+  {
+    "question": "How do you find articulation points?",
+    "options": [
+      "DFS-based algorithm.",
+      "BFS.",
+      "Sorting.",
+      "Hashing.",
+      "Heap."
+    ],
+    "answer": "DFS-based algorithm."
+  },
+  {
+    "question": "How do you find bridges?",
+    "options": [
+      "DFS-based algorithm.",
+      "BFS.",
+      "Sorting.",
+      "Hashing.",
+      "Heap."
+    ],
+    "answer": "DFS-based algorithm."
+  },
+  {
+    "question": "What is the complexity of Tarjan's SCC algorithm?",
+    "options": [
+      "O(V + E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V + E)."
+  },
+  {
+    "question": "What is Kosaraju's SCC algorithm?",
+    "options": [
+      "Another SCC algorithm.",
+      "Tree sorting.",
+      "Heap.",
+      "List.",
+      "Stack."
+    ],
+    "answer": "Another SCC algorithm."
+  },
+  {
+    "question": "Are articulation points bridges?",
+    "options": [
+      "Not always.",
+      "Yes.",
+      "No.",
+      "Only in trees.",
+      "Never."
+    ],
+    "answer": "Not always."
+  },
+  {
+    "question": "What is a 2-connected graph?",
+    "options": [
+      "Graph with no articulation points.",
+      "Graph with many articulation points.",
+      "Tree.",
+      "Heap.",
+      "List."
+    ],
+    "answer": "Graph with no articulation points."
+  },
+  {
+    "question": "What is the maximum number of articulation points in a graph with V vertices?",
+    "options": [
+      "V-2.",
+      "V.",
+      "V+1.",
+      "V/2.",
+      "V-1."
+    ],
+    "answer": "V-2."
+  },
+  {
+    "question": "What is the maximum number of articulation points in a graph with V vertices?",
+    "options": [
+      "V-2.",
+      "V.",
+      "V+1.",
+      "V/2.",
+      "V-1."
+    ],
+    "answer": "V-2."
+  },
+  {
+    "question": "What is a 2-connected graph?",
+    "options": [
+      "Graph with no articulation points.",
+      "Graph with many articulation points.",
+      "Tree.",
+      "Heap.",
+      "List."
+    ],
+    "answer": "Graph with no articulation points."
+  },
+  {
+    "question": "Are articulation points bridges?",
+    "options": [
+      "Not always.",
+      "Yes.",
+      "No.",
+      "Only in trees.",
+      "Never."
+    ],
+    "answer": "Not always."
+  },
+  {
+    "question": "What is Kosaraju's SCC algorithm?",
+    "options": [
+      "Another SCC algorithm.",
+      "Tree sorting.",
+      "Heap.",
+      "List.",
+      "Stack."
+    ],
+    "answer": "Another SCC algorithm."
+  },
+  {
+    "question": "How do you find bridges?",
+    "options": [
+      "DFS-based algorithm.",
+      "BFS.",
+      "Sorting.",
+      "Hashing.",
+      "Heap."
+    ],
+    "answer": "DFS-based algorithm."
+  },
+  {
+    "question": "How do you find articulation points?",
+    "options": [
+      "DFS-based algorithm.",
+      "BFS.",
+      "Sorting.",
+      "Hashing.",
+      "Heap."
+    ],
+    "answer": "DFS-based algorithm."
+  },
+  {
+    "question": "What is an articulation point?",
+    "options": [
+      "Vertex whose removal disconnects the graph.",
+      "Edge whose removal disconnects the graph.",
+      "Path.",
+      "Cycle.",
+      "Tree."
+    ],
+    "answer": "Vertex whose removal disconnects the graph."
+  },
+  {
+    "question": "What is a bridge in a graph?",
+    "options": [
+      "Edge whose removal disconnects the graph.",
+      "Vertex whose removal disconnects the graph.",
+      "Path.",
+      "Cycle.",
+      "Tree."
+    ],
+    "answer": "Edge whose removal disconnects the graph."
+  },
+  {
+    "question": "What does a cycle in a graph signify?",
+    "options": [
+      "A closed path.",
+      "A tree.",
+      "A list.",
+      "A heap.",
+      "An array."
+    ],
+    "answer": "A closed path."
+  },
+  {
+    "question": "What is a forest?",
+    "options": [
+      "Collection of trees.",
+      "Collection of heaps.",
+      "Collection of lists.",
+      "Collection of stacks.",
+      "Collection of arrays."
+    ],
+    "answer": "Collection of trees."
+  },
+  {
+    "question": "Which algorithm uses a priority queue extensively?",
+    "options": [
+      "Prim's.",
+      "Kruskal's.",
+      "Bubble Sort.",
+      "Merge Sort.",
+      "Binary Search."
+    ],
+    "answer": "Prim's."
+  },
+  {
+    "question": "What is 'Extract-Max'?",
+    "options": [
+      "Removing the maximum and restoring the heap.",
+      "Sorting.",
+      "Deleting.",
+      "Hashing.",
+      "Searching."
+    ],
+    "answer": "Removing the maximum and restoring the heap."
+  },
+  {
+    "question": "What is 'Extract-Min'?",
+    "options": [
+      "Removing the minimum and restoring the heap.",
+      "Sorting.",
+      "Deleting.",
+      "Hashing.",
+      "Searching."
+    ],
+    "answer": "Removing the minimum and restoring the heap."
+  },
+  {
+    "question": "What is 'Decrease-Key'?",
+    "options": [
+      "Lowering a value and updating its heap position.",
+      "Sorting.",
+      "Deleting.",
+      "Hashing.",
+      "Searching."
+    ],
+    "answer": "Lowering a value and updating its heap position."
+  },
+  {
+    "question": "How are priorities defined in Max-Heap?",
+    "options": [
+      "Larger value means higher priority.",
+      "Smaller value means higher priority.",
+      "Random.",
+      "No priority.",
+      "Alphabetical."
+    ],
+    "answer": "Larger value means higher priority."
+  },
+  {
+    "question": "How are priorities defined in Min-Heap?",
+    "options": [
+      "Smaller value means higher priority.",
+      "Larger value means higher priority.",
+      "Random.",
+      "No priority.",
+      "Alphabetical."
+    ],
+    "answer": "Smaller value means higher priority."
+  },
+  {
+    "question": "What is a 'priority queue'?",
+    "options": [
+      "A queue where elements are retrieved based on priority.",
+      "FIFO queue.",
+      "LIFO queue.",
+      "Stack.",
+      "List."
+    ],
+    "answer": "A queue where elements are retrieved based on priority."
+  },
+  {
+    "question": "Are there negative weights in MST?",
+    "options": [
+      "Yes.",
+      "No.",
+      "Only in small graphs.",
+      "Only in trees.",
+      "Never."
+    ],
+    "answer": "Yes."
+  },
+  {
+    "question": "What is an application of MST?",
+    "options": [
+      "Network design.",
+      "Sorting.",
+      "Hashing.",
+      "Tree balancing.",
+      "Graph coloring."
+    ],
+    "answer": "Network design."
+  },
+  {
+    "question": "Can MST be used in networking?",
+    "options": [
+      "Yes.",
+      "No.",
+      "Only in small networks.",
+      "Only in large networks.",
+      "Never."
+    ],
+    "answer": "Yes."
+  },
+  {
+    "question": "Which algorithm is better for disconnected graphs?",
+    "options": [
+      "Both can be modified.",
+      "Prim's.",
+      "Kruskal's.",
+      "Neither.",
+      "Only Kruskal's."
+    ],
+    "answer": "Both can be modified."
+  },
+  {
+    "question": "What is the space complexity of Prim’s?",
+    "options": [
+      "O(V + E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V + E)."
+  },
+  {
+    "question": "What is the space complexity of Kruskal’s?",
+    "options": [
+      "O(V + E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V + E)."
+  },
+  {
+    "question": "Does Kruskal’s algorithm always work for connected graphs?",
+    "options": [
+      "Yes.",
+      "No.",
+      "Only if acyclic.",
+      "Only if sorted.",
+      "Always."
+    ],
+    "answer": "Yes."
+  },
+  {
+    "question": "Does Prim's algorithm always work for connected graphs?",
+    "options": [
+      "Yes.",
+      "No.",
+      "Only if acyclic.",
+      "Only if sorted.",
+      "Always."
+    ],
+    "answer": "Yes."
+  },
+  {
+    "question": "What does the cut property state?",
+    "options": [
+      "The minimum weight crossing edge of a cut is in the MST.",
+      "The maximum weight crossing edge is in the MST.",
+      "No edge is in the MST.",
+      "All edges are in the MST.",
+      "The tree has no edges."
+    ],
+    "answer": "The minimum weight crossing edge of a cut is in the MST."
+  },
+  {
+    "question": "What is a 'crossing edge' of a cut?",
+    "options": [
+      "An edge with endpoints in different sets.",
+      "An edge with endpoints in the same set.",
+      "No edges.",
+      "One vertex.",
+      "Two vertices."
+    ],
+    "answer": "An edge with endpoints in different sets."
+  },
+  {
+    "question": "What is a 'cut' in a graph?",
+    "options": [
+      "A partition of vertices into two sets.",
+      "A path.",
+      "A cycle.",
+      "A tree.",
+      "A list."
+    ],
+    "answer": "A partition of vertices into two sets."
+  },
+  {
+    "question": "Which of the following algorithms is not for MST?",
+    "options": [
+      "Dijkstra.",
+      "Kruskal.",
+      "Prim.",
+      "All are MST algorithms.",
+      "None are MST algorithms."
+    ],
+    "answer": "Dijkstra."
+  },
+  {
+    "question": "What happens if you add an edge to a spanning tree?",
+    "options": [
+      "A cycle is created.",
+      "It remains a tree.",
+      "The tree becomes smaller.",
+      "The tree becomes a graph.",
+      "The tree becomes a list."
+    ],
+    "answer": "A cycle is created."
+  },
+  {
+    "question": "Why is the greedy approach correct for MST?",
+    "options": [
+      "Cut property ensures global optimality.",
+      "It is simple.",
+      "It is fast.",
+      "It is memory efficient.",
+      "No reason."
+    ],
+    "answer": "Cut property ensures global optimality."
+  },
+  {
+    "question": "What is the greedy property?",
+    "options": [
+      "Always choose the best local option.",
+      "Always choose the worst local option.",
+      "Choose random options.",
+      "No choices.",
+      "Always sort first."
+    ],
+    "answer": "Always choose the best local option."
+  },
+  {
+    "question": "What is the time complexity of Prim’s using a Min-Heap?",
+    "options": [
+      "O(E log V).",
+      "O(V^2).",
+      "O(E log E).",
+      "O(V log E).",
+      "O(1)."
+    ],
+    "answer": "O(E log V)."
+  },
+  {
+    "question": "What is the time complexity of Kruskal’s using Union-Find?",
+    "options": [
+      "O(E log E).",
+      "O(V^2).",
+      "O(V log V).",
+      "O(E log V).",
+      "O(1)."
+    ],
+    "answer": "O(E log E)."
+  },
+  {
+    "question": "Which of the following is also an MST algorithm?",
+    "options": [
+      "Prim’s.",
+      "Dijkstra.",
+      "Bellman-Ford.",
+      "Quick Sort.",
+      "Merge Sort."
+    ],
+    "answer": "Prim’s."
+  },
+  {
+    "question": "Which of the following is an MST algorithm?",
+    "options": [
+      "Kruskal’s.",
+      "Dijkstra.",
+      "Bellman-Ford.",
+      "Quick Sort.",
+      "Merge Sort."
+    ],
+    "answer": "Kruskal’s."
+  },
+  {
+    "question": "How many edges does a spanning tree with V vertices have?",
+    "options": [
+      "V-1.",
+      "V.",
+      "V+1.",
+      "V/2.",
+      "V^2."
+    ],
+    "answer": "V-1."
+  },
+  {
+    "question": "What does a spanning tree achieve?",
+    "options": [
+      "Connects all nodes with minimum edges.",
+      "Connects all nodes with maximum edges.",
+      "Finds shortest path.",
+      "Finds longest path.",
+      "Sorts nodes."
+    ],
+    "answer": "Connects all nodes with minimum edges."
+  },
+  {
+    "question": "What is a spanning tree?",
+    "options": [
+      "A subgraph that includes all vertices and is a tree.",
+      "A subgraph that is not connected.",
+      "A subgraph that contains cycles.",
+      "A subgraph that has fewer vertices.",
+      "A subgraph that has no edges."
+    ],
+    "answer": "A subgraph that includes all vertices and is a tree."
+  },
+  {
+    "question": "Which representation is better for sparse graphs?",
+    "options": [
+      "Adjacency list.",
+      "Adjacency matrix.",
+      "Heap.",
+      "List.",
+      "Stack."
+    ],
+    "answer": "Adjacency list."
+  },
+  {
+    "question": "Which representation is better for dense graphs?",
+    "options": [
+      "Adjacency matrix.",
+      "Adjacency list.",
+      "Heap.",
+      "List.",
+      "Stack."
+    ],
+    "answer": "Adjacency matrix."
+  },
+  {
+    "question": "How do you represent a graph using an adjacency list?",
+    "options": [
+      "Array of lists.",
+      "2D array.",
+      "Tree.",
+      "Heap.",
+      "List."
+    ],
+    "answer": "Array of lists."
+  },
+  {
+    "question": "How do you represent a graph using an adjacency matrix?",
+    "options": [
+      "2D array.",
+      "1D array.",
+      "Linked list.",
+      "Tree.",
+      "Heap."
+    ],
+    "answer": "2D array."
+  },
+  {
+    "question": "What is a forest?",
+    "options": [
+      "A collection of disjoint trees.",
+      "A collection of cycles.",
+      "A collection of heaps.",
+      "A collection of lists.",
+      "A collection of arrays."
+    ],
+    "answer": "A collection of disjoint trees."
+  },
+  {
+    "question": "What is an acyclic graph?",
+    "options": [
+      "A graph with no cycles.",
+      "A graph with cycles.",
+      "A tree.",
+      "A heap.",
+      "A list."
+    ],
+    "answer": "A graph with no cycles."
+  },
+  {
+    "question": "What is a cycle?",
+    "options": [
+      "A path that starts and ends at the same vertex.",
+      "A path with no end.",
+      "A path with no start.",
+      "A linear path.",
+      "A tree."
+    ],
+    "answer": "A path that starts and ends at the same vertex."
+  },
+  {
+    "question": "What is a simple path?",
+    "options": [
+      "A path with no repeated vertices.",
+      "A path with loops.",
+      "A path with weights.",
+      "A path with cycles.",
+      "A path with no edges."
+    ],
+    "answer": "A path with no repeated vertices."
+  },
+  {
+    "question": "What is a path?",
+    "options": [
+      "Sequence of vertices connected by edges.",
+      "No sequence.",
+      "Only one vertex.",
+      "Only two vertices.",
+      "Cycle."
+    ],
+    "answer": "Sequence of vertices connected by edges."
+  },
+  {
+    "question": "What is a subgraph?",
+    "options": [
+      "A subset of vertices and edges.",
+      "A tree.",
+      "A heap.",
+      "A list.",
+      "An array."
+    ],
+    "answer": "A subset of vertices and edges."
+  },
+  {
+    "question": "What is the out-degree of a vertex in a directed graph?",
+    "options": [
+      "Number of outgoing edges.",
+      "Number of incoming edges.",
+      "Number of edges.",
+      "Number of paths.",
+      "Number of cycles."
+    ],
+    "answer": "Number of outgoing edges."
+  },
+  {
+    "question": "What is the in-degree of a vertex in a directed graph?",
+    "options": [
+      "Number of incoming edges.",
+      "Number of outgoing edges.",
+      "Number of edges.",
+      "Number of paths.",
+      "Number of cycles."
+    ],
+    "answer": "Number of incoming edges."
+  },
+  {
+    "question": "What is the degree of a vertex?",
+    "options": [
+      "Number of edges connected to it.",
+      "Number of vertices.",
+      "Number of cycles.",
+      "Number of paths.",
+      "Number of weights."
+    ],
+    "answer": "Number of edges connected to it."
+  },
+  {
+    "question": "What is an unweighted graph?",
+    "options": [
+      "No weights.",
+      "Edges have weights.",
+      "Only one edge.",
+      "Two edges.",
+      "Cyclic."
+    ],
+    "answer": "No weights."
+  },
+  {
+    "question": "What is a weighted graph?",
+    "options": [
+      "Edges have weights.",
+      "No weights.",
+      "Only one edge.",
+      "Two edges.",
+      "Cyclic."
+    ],
+    "answer": "Edges have weights."
+  },
+  {
+    "question": "What is an undirected graph?",
+    "options": [
+      "Edges have no direction.",
+      "Edges have directions.",
+      "Only one edge.",
+      "Two edges.",
+      "Cyclic."
+    ],
+    "answer": "Edges have no direction."
+  },
+  {
+    "question": "What is a directed graph?",
+    "options": [
+      "Edges have directions.",
+      "No directions.",
+      "Only one edge.",
+      "Two edges.",
+      "Cyclic."
+    ],
+    "answer": "Edges have directions."
+  },
+  {
+    "question": "What is the complexity of 2-coloring?",
+    "options": [
+      "O(V + E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V + E)."
+  },
+  {
+    "question": "How do you check if a graph is bipartite?",
+    "options": [
+      "Using BFS/DFS 2-coloring.",
+      "Using sorting.",
+      "Using hashing.",
+      "Using heap.",
+      "Using stack."
+    ],
+    "answer": "Using BFS/DFS 2-coloring."
+  },
+  {
+    "question": "What is a bipartite graph?",
+    "options": [
+      "Vertices can be divided into two disjoint sets such that every edge connects a vertex in one set to one in the other.",
+      "A tree.",
+      "A heap.",
+      "A list.",
+      "An array."
+    ],
+    "answer": "Vertices can be divided into two disjoint sets such that every edge connects a vertex in one set to one in the other."
+  },
+  {
+    "question": "What are strongly connected components?",
+    "options": [
+      "Maximal subgraphs where every vertex is reachable from every other vertex.",
+      "A tree.",
+      "A heap.",
+      "A list.",
+      "An array."
+    ],
+    "answer": "Maximal subgraphs where every vertex is reachable from every other vertex."
+  },
+  {
+    "question": "Which algorithm finds strongly connected components?",
+    "options": [
+      "Tarjan's algorithm.",
+      "Dijkstra.",
+      "Bellman-Ford.",
+      "Floyd-Warshall.",
+      "Kruskal."
+    ],
+    "answer": "Tarjan's algorithm."
+  },
+  {
+    "question": "What is a bridge in a graph?",
+    "options": [
+      "An edge whose removal increases the number of connected components.",
+      "A leaf node.",
+      "A root node.",
+      "A vertex.",
+      "A cycle."
+    ],
+    "answer": "An edge whose removal increases the number of connected components."
+  },
+  {
+    "question": "What is an articulation point in a graph?",
+    "options": [
+      "A vertex whose removal increases the number of connected components.",
+      "A leaf node.",
+      "A root node.",
+      "An edge.",
+      "A cycle."
+    ],
+    "answer": "A vertex whose removal increases the number of connected components."
+  },
+  {
+    "question": "What is the main purpose of DFS?",
+    "options": [
+      "Exploring as far as possible along each branch.",
+      "Shortest path.",
+      "Sorting.",
+      "Hashing.",
+      "Balancing."
+    ],
+    "answer": "Exploring as far as possible along each branch."
+  },
+  {
+    "question": "What does BFS find?",
+    "options": [
+      "Shortest path in unweighted graph.",
+      "Longest path.",
+      "All paths.",
+      "No paths.",
+      "Weight."
+    ],
+    "answer": "Shortest path in unweighted graph."
+  },
+  {
+    "question": "Which data structure does DFS use?",
+    "options": [
+      "Stack.",
+      "Queue.",
+      "Heap.",
+      "Tree.",
+      "Array."
+    ],
+    "answer": "Stack."
+  },
+  {
+    "question": "Which data structure does BFS use?",
+    "options": [
+      "Queue.",
+      "Stack.",
+      "Heap.",
+      "Tree.",
+      "Array."
+    ],
+    "answer": "Queue."
+  },
+  {
+    "question": "What is the complexity of DFS?",
+    "options": [
+      "O(V + E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V + E)."
+  },
+  {
+    "question": "What is the complexity of BFS?",
+    "options": [
+      "O(V + E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V + E)."
+  },
+  {
+    "question": "What is a 'dense' graph?",
+    "options": [
+      "Number of edges is close to V^2.",
+      "Number of edges is close to V.",
+      "No edges.",
+      "One vertex.",
+      "Infinite vertices."
+    ],
+    "answer": "Number of edges is close to V^2."
+  },
+  {
+    "question": "What is a 'sparse' graph?",
+    "options": [
+      "Number of edges is close to V.",
+      "Number of edges is close to V^2.",
+      "No edges.",
+      "One vertex.",
+      "Infinite vertices."
+    ],
+    "answer": "Number of edges is close to V."
+  },
+  {
+    "question": "What is the number of edges in a complete undirected graph with V vertices?",
+    "options": [
+      "V*(V-1)/2.",
+      "V^2.",
+      "V.",
+      "2*V.",
+      "V-1."
+    ],
+    "answer": "V*(V-1)/2."
+  },
+  {
+    "question": "What is a 'complete' graph?",
+    "options": [
+      "Every pair of distinct vertices is connected by a unique edge.",
+      "No edges.",
+      "Only one edge.",
+      "Two edges.",
+      "Cyclic."
+    ],
+    "answer": "Every pair of distinct vertices is connected by a unique edge."
+  },
+  {
+    "question": "What is a 'connected' graph?",
+    "options": [
+      "There is a path between every pair of vertices.",
+      "No paths exist.",
+      "Only one vertex.",
+      "Only two vertices.",
+      "Edges are negative."
+    ],
+    "answer": "There is a path between every pair of vertices."
+  },
+  {
+    "question": "What does a negative cycle mean in a graph?",
+    "options": [
+      "Shortest path is undefined.",
+      "Graph is acyclic.",
+      "Tree is balanced.",
+      "Hash table is empty.",
+      "Heap is full."
+    ],
+    "answer": "Shortest path is undefined."
+  },
+  {
+    "question": "What is Topological Sort?",
+    "options": [
+      "Ordering vertices such that for every directed edge u->v, u comes before v.",
+      "Sorting by weight.",
+      "Sorting by index.",
+      "Deleting nodes.",
+      "Hashing nodes."
+    ],
+    "answer": "Ordering vertices such that for every directed edge u->v, u comes before v."
+  },
+  {
+    "question": "Which algorithm is used to find the shortest path in a DAG?",
+    "options": [
+      "Topological sort based approach.",
+      "Dijkstra.",
+      "Bellman-Ford.",
+      "Floyd-Warshall.",
+      "Kruskal."
+    ],
+    "answer": "Topological sort based approach."
+  },
+  {
+    "question": "What is a Directed Acyclic Graph (DAG)?",
+    "options": [
+      "A graph with no directed cycles.",
+      "A tree.",
+      "A heap.",
+      "A list.",
+      "A queue."
+    ],
+    "answer": "A graph with no directed cycles."
+  },
+  {
+    "question": "What is the complexity of Floyd-Warshall?",
+    "options": [
+      "O(V^3).",
+      "O(V * E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(1)."
+    ],
+    "answer": "O(V^3)."
+  },
+  {
+    "question": "What is the Floyd-Warshall algorithm used for?",
+    "options": [
+      "All-pairs shortest paths.",
+      "Sorting.",
+      "Hashing.",
+      "Tree balancing.",
+      "Graph coloring."
+    ],
+    "answer": "All-pairs shortest paths."
+  },
+  {
+    "question": "What is the complexity of Bellman-Ford?",
+    "options": [
+      "O(V * E).",
+      "O(V^2).",
+      "O(E log V).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V * E)."
+  },
+  {
+    "question": "What is the Bellman-Ford algorithm used for?",
+    "options": [
+      "Shortest path with negative weights.",
+      "Sorting.",
+      "Hashing.",
+      "Trie indexing.",
+      "Tree balancing."
+    ],
+    "answer": "Shortest path with negative weights."
+  },
+  {
+    "question": "What is the time complexity of Dijkstra’s using a binary heap?",
+    "options": [
+      "O((V+E) log V).",
+      "O(V^2).",
+      "O(E log E).",
+      "O(V log E).",
+      "O(1)."
+    ],
+    "answer": "O((V+E) log V)."
+  },
+  {
+    "question": "Can Dijkstra's algorithm handle negative edge weights?",
+    "options": [
+      "No.",
+      "Yes.",
+      "Only if acyclic.",
+      "Only if sorted.",
+      "Always."
+    ],
+    "answer": "No."
+  },
+  {
+    "question": "What is a characteristic of Dijkstra’s algorithm?",
+    "options": [
+      "Greedy.",
+      "Dynamic Programming.",
+      "Brute Force.",
+      "Randomized.",
+      "Backtracking."
+    ],
+    "answer": "Greedy."
+  },
+  {
+    "question": "Which algorithm finds the shortest path from a single source vertex to all other vertices?",
+    "options": [
+      "Dijkstra's algorithm.",
+      "Kruskal's algorithm.",
+      "Prim's algorithm.",
+      "Bubble Sort.",
+      "Binary Search."
+    ],
+    "answer": "Dijkstra's algorithm."
+  },
+  {
+    "question": "Can a graph have multiple Minimum Spanning Trees?",
+    "options": [
+      "Yes, if edge weights are not unique.",
+      "No.",
+      "Only if disconnected.",
+      "Only if acyclic.",
+      "Never."
+    ],
+    "answer": "Yes, if edge weights are not unique."
+  },
+  {
+    "question": "What is a 'Spanning Tree'?",
+    "options": [
+      "A tree that connects all vertices of a graph.",
+      "A tree with no edges.",
+      "A tree with loops.",
+      "A forest.",
+      "A list."
+    ],
+    "answer": "A tree that connects all vertices of a graph."
+  },
+  {
+    "question": "What is the amortized time complexity of Union and Find operations with path compression and union by rank?",
+    "options": [
+      "O(log n).",
+      "O(n).",
+      "O(alpha(n)) (Inverse Ackermann function, near constant).",
+      "O(1).",
+      "O(n^2)."
+    ],
+    "answer": "O(alpha(n)) (Inverse Ackermann function, near constant)."
+  },
+  {
+    "question": "What technique keeps the tree balanced in Disjoint-Set by attaching the smaller tree to the root of the larger tree?",
+    "options": [
+      "Path compression.",
+      "Union by rank (or size).",
+      "Sorting.",
+      "Hashing.",
+      "Linear probing."
+    ],
+    "answer": "Union by rank (or size)."
+  },
+  {
+    "question": "What technique is used to flatten the tree structure in a Disjoint-Set to achieve nearly O(1) performance?",
+    "options": [
+      "Path compression.",
+      "Sorting.",
+      "Hashing.",
+      "Binary search.",
+      "Linear probing."
+    ],
+    "answer": "Path compression."
+  },
+  {
+    "question": "What is the purpose of the 'Find' operation in the Disjoint-Set data structure?",
+    "options": [
+      "To merge two sets.",
+      "To determine which subset a particular element belongs to by returning the representative of that set.",
+      "To count the total number of sets.",
+      "To delete a specific element.",
+      "To sort all elements."
+    ],
+    "answer": "To determine which subset a particular element belongs to by returning the representative of that set."
+  },
+  {
+    "question": "What is the purpose of the 'Union' operation in the Disjoint-Set (Union-Find) data structure?",
+    "options": [
+      "To find the root of a set.",
+      "To merge two separate disjoint sets into a single set.",
+      "To delete an entire set from memory.",
+      "To sort the elements within a set.",
+      "To compress the path of a tree."
+    ],
+    "answer": "To merge two separate disjoint sets into a single set."
+  },
+  {
+    "question": "What is the primary difference between Dijkstra’s algorithm and Bellman-Ford regarding edge weights?",
+    "options": [
+      "Dijkstra handles negative weights, Bellman-Ford does not.",
+      "Bellman-Ford handles negative weights, Dijkstra does not.",
+      "Both handle negative weights.",
+      "Neither handles negative weights.",
+      "Dijkstra is slower."
+    ],
+    "answer": "Bellman-Ford handles negative weights, Dijkstra does not."
+  },
+  {
+    "question": "What is the time complexity of the Floyd-Warshall algorithm?",
+    "options": [
+      "O(V^3)",
+      "O(V^2)",
+      "O(V*E)",
+      "O(E log V)",
+      "O(1)"
+    ],
+    "answer": "O(V^3)"
+  },
+  {
+    "question": "What kind of problem does Floyd-Warshall solve?",
+    "options": [
+      "Single-source shortest path.",
+      "All-pairs shortest path.",
+      "Minimum Spanning Tree.",
+      "Sorting.",
+      "Searching."
+    ],
+    "answer": "All-pairs shortest path."
+  },
+  {
+    "question": "What is the main advantage of the Bellman-Ford algorithm over Dijkstra's?",
+    "options": [
+      "Speed.",
+      "Memory usage.",
+      "Ability to handle negative edge weights.",
+      "Simplicity.",
+      "Acyclic support only."
+    ],
+    "answer": "Ability to handle negative edge weights."
+  },
+  {
+    "question": "What does Dijkstra's algorithm use to pick the next node?",
+    "options": [
+      "Min-Priority Queue.",
+      "Stack.",
+      "Linked list.",
+      "Random choice.",
+      "FIFO Queue."
+    ],
+    "answer": "Min-Priority Queue."
+  },
+  {
+    "question": "Which algorithm is suitable for finding the shortest path in a DAG?",
+    "options": [
+      "Topological Sort approach.",
+      "Dijkstra.",
+      "Prim.",
+      "Kruskal.",
+      "Bubble Sort."
+    ],
+    "answer": "Topological Sort approach."
+  },
+  {
+    "question": "What is the definition of a path in a graph?",
+    "options": [
+      "A sequence of vertices connected by edges.",
+      "A tree.",
+      "A heap.",
+      "A list.",
+      "An array."
+    ],
+    "answer": "A sequence of vertices connected by edges."
+  },
+  {
+    "question": "How many spanning trees can a complete graph with V vertices have?",
+    "options": [
+      "V^(V-2) (Cayley's formula).",
+      "V-1.",
+      "V.",
+      "V+1.",
+      "V^2."
+    ],
+    "answer": "V^(V-2) (Cayley's formula)."
+  },
+  {
+    "question": "What is the complexity of Kruskal's algorithm?",
+    "options": [
+      "O(E log E).",
+      "O(V log V).",
+      "O(V^2).",
+      "O(E).",
+      "O(log E)."
+    ],
+    "answer": "O(E log E)."
+  },
+  {
+    "question": "What is the complexity of Prim's algorithm using adjacency matrix?",
+    "options": [
+      "O(V^2).",
+      "O(E log V).",
+      "O(E log E).",
+      "O(V log V).",
+      "O(1)."
+    ],
+    "answer": "O(V^2)."
+  }
+]

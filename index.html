@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Preperater</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            /* Vibrant Neon Dark Theme */
+            background: linear-gradient(-45deg, #09090b, #1a1a2e, #16213e, #4a00e0);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* --- Floating Background Characters --- */
+        .particles-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .cartoon {
+            position: absolute;
+            pointer-events: none;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+            transform-origin: center center;
+        }
+
+        /* 1. Robot (Roaming Only on the LEFT side) */
+        .left-robot {
+            left: 3vw;
+            top: 10vh;
+            animation: roamRobot 20s infinite ease-in-out;
+        }
+
+        .left-robot .head {
+            width: 35px;
+            height: 25px;
+            background: linear-gradient(135deg, #a1c4fd, #00b0ff);
+            border-radius: 8px 8px 2px 2px;
+            position: relative;
+            margin-bottom: 4px;
+        }
+
+        .left-robot .eyes {
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+            padding-top: 6px;
+        }
+
+        .left-robot .eye {
+            width: 6px;
+            height: 6px;
+            background: #ffffff;
+            border-radius: 50%;
+            animation: blink 4s infinite linear;
+        }
+
+        .left-robot .antenna {
+            width: 2px;
+            height: 10px;
+            background: #a1c4fd;
+            position: absolute;
+            top: -8px;
+            left: 16px;
+        }
+
+        .left-robot .body {
+            width: 35px;
+            height: 30px;
+            background: linear-gradient(135deg, #00b0ff, #a1c4fd);
+            border-radius: 4px 4px 10px 10px;
+            position: relative;
+        }
+
+        .left-robot .heart {
+            width: 8px;
+            height: 8px;
+            background: #ff00cc;
+            position: absolute;
+            top: 8px;
+            left: 13px;
+            border-radius: 50%;
+            animation: pulseHeart 1.5s infinite;
+        }
+
+        /* 2. Alien (Roaming Only on the RIGHT side) */
+        .right-alien {
+            right: 3vw;
+            top: 80vh;
+            animation: roamAlien 22s infinite ease-in-out;
+        }
+
+        .right-alien .core {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #ff00cc, #333399);
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .right-alien .eye-central {
+            width: 18px;
+            height: 18px;
+            background: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            top: 13px;
+            left: 13px;
+            animation: blinkAlien 5s infinite;
+        }
+
+        .right-alien .pupil {
+            width: 7px;
+            height: 7px;
+            background: #00ff88;
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        .right-alien .points {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .right-alien .point {
+            position: absolute;
+            background: linear-gradient(135deg, #ff00cc, #333399);
+            border-radius: 50%;
+        }
+
+        .right-alien .p1 {
+            width: 8px;
+            height: 8px;
+            top: 0;
+            left: 18px;
+        }
+
+        .right-alien .p2 {
+            width: 12px;
+            height: 12px;
+            top: 12px;
+            right: 0;
+        }
+
+        .right-alien .p3 {
+            width: 10px;
+            height: 10px;
+            bottom: 5px;
+            right: 8px;
+        }
+
+        .right-alien .p4 {
+            width: 15px;
+            height: 15px;
+            bottom: 0;
+            left: 12px;
+        }
+
+        .right-alien .p5 {
+            width: 6px;
+            height: 6px;
+            top: 18px;
+            left: 0;
+        }
+
+        /* 3. UFO (Roaming Only on the TOP side) */
+        .roaming-ufo {
+            top: 5vh;
+            left: 5vw;
+            animation: roamUFO 25s infinite ease-in-out;
+            filter: drop-shadow(0 0 15px rgba(0, 255, 136, 0.6));
+        }
+
+        .ufo-dome {
+            width: 30px;
+            height: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 30px 30px 0 0;
+            margin: 0 auto;
+        }
+
+        .ufo-base {
+            width: 60px;
+            height: 12px;
+            background: linear-gradient(90deg, #00ff88, #00b0ff);
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: -2px;
+        }
+
+        .ufo-light {
+            width: 5px;
+            height: 5px;
+            background: #fff;
+            border-radius: 50%;
+            animation: blink 1s infinite alternate;
+        }
+
+        /* 4. Ghost/Jellyfish (Roaming Only on the BOTTOM side) */
+        .roaming-ghost {
+            bottom: 5vh;
+            right: 5vw;
+            animation: roamGhost 28s infinite ease-in-out;
+            filter: drop-shadow(0 0 15px rgba(255, 0, 204, 0.6));
+        }
+
+        .ghost-body {
+            width: 40px;
+            height: 45px;
+            background: linear-gradient(135deg, #ff00cc, #333399);
+            border-radius: 20px 20px 0 0;
+            position: relative;
+        }
+
+        .ghost-eyes {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 12px;
+        }
+
+        .g-eye {
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        .ghost-tails {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .g-tail {
+            width: 12px;
+            height: 10px;
+            background: #333399;
+            border-radius: 0 0 12px 12px;
+        }
+
+
+        /* Keyframes: STRICTLY RESTRICTED TO BORDERS/EMPTY SPACE */
+        @keyframes roamRobot {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            25% {
+                transform: translate(5vw, 30vh) rotate(5deg);
+            }
+
+            50% {
+                transform: translate(0vw, 65vh) rotate(0deg);
+            }
+
+            75% {
+                transform: translate(8vw, 35vh) rotate(-5deg);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+        }
+
+        @keyframes roamAlien {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            25% {
+                transform: translate(-5vw, -30vh) scale(1.1);
+            }
+
+            50% {
+                transform: translate(0vw, -65vh) scale(0.9);
+            }
+
+            75% {
+                transform: translate(-8vw, -35vh) scale(1);
+            }
+
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+        }
+
+        @keyframes roamUFO {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            25% {
+                transform: translate(35vw, 5vh) rotate(10deg);
+            }
+
+            50% {
+                transform: translate(75vw, 0vh) rotate(-5deg);
+            }
+
+            75% {
+                transform: translate(40vw, 8vh) rotate(5deg);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+        }
+
+        @keyframes roamGhost {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            25% {
+                transform: translate(-35vw, -5vh) scale(1.1);
+            }
+
+            50% {
+                transform: translate(-75vw, 0vh) scale(0.9);
+            }
+
+            75% {
+                transform: translate(-40vw, -8vh) scale(1);
+            }
+
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+        }
+
+        @keyframes pulseHeart {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.3);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes blink {
+
+            0%,
+            90%,
+            100% {
+                transform: scaleY(1);
+            }
+
+            95% {
+                transform: scaleY(0.1);
+            }
+        }
+
+        @keyframes blinkAlien {
+
+            0%,
+            80%,
+            100% {
+                transform: scaleY(1);
+            }
+
+            85% {
+                transform: scaleY(0.1);
+            }
+        }
+
+        /* --- Main Glass Panel --- */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 18px;
+            padding: 25px;
+            width: 100%;
+            max-width: 700px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            z-index: 10;
+            position: relative;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            background: -webkit-linear-gradient(#ff00cc, #333399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* --- Settings Inputs --- */
+        .settings-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .settings-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #ccc;
+            font-weight: 500;
+        }
+
+        .settings-group input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            font-size: 15px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+        .settings-group input:focus {
+            border-color: #ff00cc;
+            box-shadow: 0 0 10px rgba(255, 0, 204, 0.3);
+        }
+
+        .btn-main {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(90deg, #ff00cc 0%, #333399 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(255, 0, 204, 0.4);
+            margin-top: 5px;
+        }
+
+        .btn-main:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 0, 204, 0.6);
+        }
+
+        /* --- Stats Layout --- */
+        .timer-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .timer-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: #00ff88;
+            letter-spacing: 2px;
+            text-shadow: 0 0 12px rgba(0, 255, 136, 0.5);
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 5px 18px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .stat-box {
+            padding: 10px 12px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0, 0, 0, 0.4);
+            letter-spacing: 0.5px;
+        }
+
+        .q-box {
+            border: 1px solid #a1c4fd;
+            color: #a1c4fd;
+            box-shadow: 0 0 8px rgba(161, 196, 253, 0.1);
+        }
+
+        .percent-box {
+            border: 1px solid #ffd700;
+            color: #ffd700;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.1);
+        }
+
+        .correct-box {
+            border: 1px solid #00ff88;
+            color: #00ff88;
+            box-shadow: 0 0 8px rgba(0, 255, 136, 0.1);
+        }
+
+        .wrong-box {
+            border: 1px solid #ff0055;
+            color: #ff0055;
+            box-shadow: 0 0 8px rgba(255, 0, 85, 0.1);
+        }
+
+        .question-text {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        /* --- Options --- */
+        .option-btn {
+            width: 100%;
+            padding: 12px 16px;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .option-btn:hover:not(.disabled) {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: #ff00cc;
+            transform: translateX(6px);
+        }
+
+        .option-btn.correct {
+            background: rgba(0, 255, 136, 0.2) !important;
+            border-color: #00ff88 !important;
+            box-shadow: 0 0 12px rgba(0, 255, 136, 0.3);
+            color: #00ff88;
+            font-weight: 600;
+        }
+
+        .option-btn.wrong {
+            background: rgba(255, 0, 85, 0.2) !important;
+            border-color: #ff0055 !important;
+            box-shadow: 0 0 12px rgba(255, 0, 85, 0.3);
+            color: #ff0055;
+            font-weight: 600;
+        }
+
+        .disabled {
+            pointer-events: none;
+        }
+
+        /* --- Results --- */
+        .result-box h1 {
+            font-size: 50px;
+            margin: 15px 0;
+            color: #ffd700;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+        }
+
+        .result-box p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="particles-container">
+        <div class="cartoon left-robot">
+            <div class="head">
+                <div class="eyes">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                </div>
+                <div class="antenna"></div>
+            </div>
+            <div class="body">
+                <div class="heart"></div>
+            </div>
+        </div>
+
+        <div class="cartoon right-alien">
+            <div class="core">
+                <div class="eye-central">
+                    <div class="pupil"></div>
+                </div>
+            </div>
+            <div class="points">
+                <div class="point p1"></div>
+                <div class="point p2"></div>
+                <div class="point p3"></div>
+                <div class="point p4"></div>
+                <div class="point p5"></div>
+            </div>
+        </div>
+
+        <div class="cartoon roaming-ufo">
+            <div class="ufo-dome"></div>
+            <div class="ufo-base">
+                <div class="ufo-light"></div>
+                <div class="ufo-light"></div>
+                <div class="ufo-light"></div>
+            </div>
+        </div>
+
+        <div class="cartoon roaming-ghost">
+            <div class="ghost-body">
+                <div class="ghost-eyes">
+                    <div class="g-eye"></div>
+                    <div class="g-eye"></div>
+                </div>
+            </div>
+            <div class="ghost-tails">
+                <div class="g-tail"></div>
+                <div class="g-tail"></div>
+                <div class="g-tail"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="start-screen" class="glass-panel">
+        <h2>Quiz Settings</h2>
+
+        <div class="settings-group">
+            <label>Kitne MCQs Attempt karne hain?</label>
+            <input type="number" id="user-mcq-count" placeholder="e.g. 10 (Leave blank for all)" min="1">
+        </div>
+
+        <div class="settings-group">
+            <label>Time Limit (Minutes mein)</label>
+            <input type="number" id="user-time-limit" placeholder="e.g. 5" min="1">
+        </div>
+
+        <button class="btn-main" onclick="startCustomQuiz()">Start Challenge</button>
+    </div>
+
+    <div id="quiz-screen" class="glass-panel hidden">
+        <div class="timer-container">
+            <div class="timer-text" id="timer">00:00</div>
+        </div>
+
+        <div class="header-stats">
+            <div class="stat-box q-box">Question: <span id="q-count">0/0</span></div>
+            <div class="stat-box percent-box">Percentage: <span id="live-percent">0</span>%</div>
+            <div class="stat-box correct-box">✔ Correct: <span id="sahi-count">0</span></div>
+            <div class="stat-box wrong-box">✖ Wrong: <span id="ghalat-count">0</span></div>
+        </div>
+
+        <div class="question-text" id="question-text">Loading...</div>
+        <div id="options-container"></div>
+
+        <button class="btn-main"
+            style="margin-top: 25px; background: linear-gradient(90deg, #f12711 0%, #f5af19 100%); box-shadow: 0 5px 15px rgba(241, 39, 17, 0.4);"
+            onclick="location.reload()">Start Again</button>
+
+    </div>
+
+    <div id="result-screen" class="glass-panel hidden result-box">
+        <h2>Quiz Completed!</h2>
+        <h1 id="final-percent">0%</h1>
+        <p>Total Attempted: <b id="final-total" style="color: #a1c4fd;">0</b></p>
+        <p style="color: #00ff88;">Correct Answers: <b id="final-sahi">0</b></p>
+        <p style="color: #ff0055;">Wrong Answers: <b id="final-ghalat">0</b></p>
+        <br>
+        <button class="btn-main" onclick="location.reload()">Attempt Again</button>
+    </div>
+
+    <footer
+        style="position: absolute; bottom: 15px; left: 0; width: 100%; text-align: center; color: rgba(255, 255, 255, 0.6); font-size: 14px; letter-spacing: 1px; z-index: 20;">
+        <p>Created by Ibaad</p>
+    </footer>
+
+    <script>
+        let allQuestions = [];
+        let activeQuestions = [];
+        let currentQuestionIndex = 0;
+        let correctCount = 0;
+        let wrongCount = 0;
+        let timerInterval;
+        let timeLeft = 0;
+
+        async function startCustomQuiz() {
+            let reqCount = parseInt(document.getElementById('user-mcq-count').value);
+            let reqTime = parseInt(document.getElementById('user-time-limit').value);
+
+            try {
+                const response = await fetch('questions.json');
+                if (!response.ok) throw new Error("JSON file not found");
+
+                allQuestions = await response.json();
+
+                if (allQuestions.length === 0) {
+                    alert("Aapki JSON file khali hai!");
+                    return;
+                }
+
+                if (!reqCount || reqCount < 1) reqCount = allQuestions.length;
+                if (reqCount > allQuestions.length) {
+                    alert(`Sirf ${allQuestions.length} MCQs available hain file mein.`);
+                    reqCount = allQuestions.length;
+                }
+
+                if (!reqTime || reqTime < 1) {
+                    timeLeft = reqCount * 30;
+                } else {
+                    timeLeft = reqTime * 60;
+                }
+
+                allQuestions.sort(() => Math.random() - 0.5);
+                activeQuestions = allQuestions.slice(0, reqCount);
+
+                document.getElementById('start-screen').classList.add('hidden');
+                document.getElementById('quiz-screen').classList.remove('hidden');
+
+                startTimer();
+                loadNextQuestion();
+
+            } catch (error) {
+                alert("Error loading JSON. Make sure you are using VS Code Live Server!");
+                console.error(error);
+            }
+        }
+
+        function startTimer() {
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                let m = Math.floor(timeLeft / 60);
+                let s = timeLeft % 60;
+
+                let timerEl = document.getElementById('timer');
+                timerEl.innerText = `${m < 10 ? '0' + m : m}:${s < 10 ? '0' + s : s}`;
+
+                if (timeLeft <= 30) {
+                    timerEl.style.color = '#ff0055';
+                    timerEl.style.textShadow = '0 0 15px rgba(255, 0, 85, 0.5)';
+                }
+
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    showResult();
+                }
+            }, 1000);
+        }
+
+        function updateLiveStats() {
+            document.getElementById('q-count').innerText = `${currentQuestionIndex + 1}/${activeQuestions.length}`;
+            document.getElementById('sahi-count').innerText = correctCount;
+            document.getElementById('ghalat-count').innerText = wrongCount;
+
+            let totalAttempted = correctCount + wrongCount;
+            let percent = totalAttempted === 0 ? 0 : Math.round((correctCount / totalAttempted) * 100);
+            document.getElementById('live-percent').innerText = percent;
+        }
+
+        function loadNextQuestion() {
+            if (currentQuestionIndex >= activeQuestions.length) {
+                showResult();
+                return;
+            }
+
+            updateLiveStats();
+
+            const currentQ = activeQuestions[currentQuestionIndex];
+            document.getElementById('question-text').innerText = currentQ.question;
+
+            let options = [...currentQ.options].sort(() => Math.random() - 0.5);
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+
+            options.forEach(opt => {
+                let btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.innerText = opt;
+                btn.onclick = () => checkAnswer(btn, opt, currentQ.answer);
+                container.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(selectedBtn, selectedText, correctText) {
+            const allBtns = document.querySelectorAll('.option-btn');
+            allBtns.forEach(btn => btn.classList.add('disabled'));
+
+            if (selectedText === correctText) {
+                selectedBtn.classList.add('correct');
+                correctCount++;
+            } else {
+                selectedBtn.classList.add('wrong');
+                wrongCount++;
+
+                allBtns.forEach(btn => {
+                    if (btn.innerText === correctText) {
+                        btn.classList.add('correct');
+                    }
+                });
+            }
+
+            updateLiveStats();
+
+            setTimeout(() => {
+                currentQuestionIndex++;
+                loadNextQuestion();
+            }, 1500);
+        }
+
+        function showResult() {
+            clearInterval(timerInterval);
+            document.getElementById('quiz-screen').classList.add('hidden');
+            document.getElementById('result-screen').classList.remove('hidden');
+
+            let total = activeQuestions.length;
+            let percent = total === 0 ? 0 : Math.round((correctCount / total) * 100);
+
+            document.getElementById('final-total').innerText = total;
+            document.getElementById('final-sahi').innerText = correctCount;
+            document.getElementById('final-ghalat').innerText = wrongCount;
+            document.getElementById('final-percent').innerText = `${percent}%`;
+        }
+    </script>
+</body>
+
+</html>
